@@ -1,0 +1,192 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jobepage/hidden</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://harvesthq.github.io/chosen/chosen.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="jobpage.css">
+
+</head>
+
+<body>
+    <!--angle list nav- bar header contain logo,
+             search bar ,bell icon and profile -->
+    <div class="nav-menu">
+        <!---logo of angle list at top left-->
+        <div class="logo-anglelist">
+            <img width="130px" src="photos/angle-list logo.png" alt="Angle-list">
+        </div>
+        <!--options to select what we open in job page -->
+        <div class="anglelist-options">
+            <a href="http://127.0.0.1:5500/jobpage.html">
+                <div class="icon-job" style="color: brown;">
+                    <span style="font-size: 25px;" id="bag-icon" class="material-icons">
+                        business_center
+                    </span>
+                    <p style="margin-left: -3px;">Jobs</p>
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5500/applied.html">
+                <div class="icon-job">
+                    <span style="font-size: 25px;" id="apply-icon" class="material-icons">
+                        approval
+                    </span>
+                    <p style="margin-left: -13px;">Applied</p>
+
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5500/message.html">
+                <div class="icon-job">
+                    <span style="font-size: 25px; margin-left: 2px;" style="margin-left: 1px;font-size: 25px;"
+                        id="messageicon" class="iconify" data-icon="bx:bx-message-rounded" data-inline="false"></span>
+                    <p style="margin-left: -15px;">Messages</p>
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5500/discover.html">
+                <div class="icon-job">
+                    <span style="font-size: 25px; margin-left: 5px;" id="assessmenticon" class="iconify"
+                        data-icon="ps:paper-tablet" data-inline="false"></span>
+                    <p style="margin-left: -23px;">Assessments</p>
+
+                </div>
+            </a>
+        </div>
+        <!-- notification bell icon--->
+
+        <div class="icons">
+            <div class="header-icons">
+                <span id="bell-icon" class="material-icons">
+                    notifications
+                </span>
+                <div class="black-box-title">
+                    <p>Notifications</p>
+
+                </div>
+            </div>
+            <!--search bar icon-->
+
+            <div class="header-icons">
+                <span id="search-icon" class="material-icons">
+                    search
+                </span>
+                <div class="black-box-title">
+                    <p>Search everything</p>
+                </div>
+            </div>
+        </div>
+        <!---profile avtar-->
+        <div class="profile-avtar">
+            <img class="profile-avtar-img"  src="photos/profile-photo.jpg" alt="">
+            <p style="font-weight:500 ; font-size: 17; margin-left: 10px;">Vikrant <br><span style="font-size: 13px;" >Open to offer</span></p>
+            
+        </div>
+    </div>
+    <div class="profile-avtar-onclick">
+        <div class="profile-avtar-onclick-text1">
+            <p style="font-weight:500 ; font-size: 17;" class="profile-text1">Vikrant <br><span style="font-size: 13px;" class="profile-text1">Open to offer</span></p>
+            
+            <div>
+            <img class="profile-avtar-img" src="photos/profile-photo.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="profile-avtar-onclick-text2">
+            <p style="cursor: text;">Personal</p>
+        </div>
+        <div class="profile-avtar-onclick-text3">
+            <p class="profile-text1">Edit profile</p>
+            <p class="profile-text1">Assessments</p>
+            <p class="profile-text1">Settings</p>
+        </div>
+        <div class="profile-avtar-onclick-text2">
+            <p class="profile-text1">Help</p>
+            <p class="profile-text1">Log out</p>
+        </div>
+        <button class="profile-avtar-btn" type="button">POST A JOB</button>
+
+
+    </div>
+    <div id="notification-info">
+        <p>You have no notification yet.</p>
+     </div>
+    <div class="search-for-jobs">
+        <p>Search for jobs</p>
+        <div class="n">
+            <a class="a" href="http://127.0.0.1:5500/jobpage.html">Browse all</a>
+            <a class="a" href="http://127.0.0.1:5500/saved.html">Saved</a>
+            <a class="b" href="http://127.0.0.1:5500/hidden.html">Hidden</a>
+        </div>
+    </div>
+    <div style="margin: 20px 0px 0px 400px;">
+        <span id="telescope" style="width: 300px; height: 300px;" class="iconify" data-icon="noto-v1:telescope" data-inline="false"></span>
+       <p style="margin-left: 80px; margin-top: 50px; font-size: 18px;">You have no hidden search</p>
+
+    </div>
+    <style>
+        .a {
+            color: grey;
+        }
+
+        .a:hover {
+            color: rgb(42, 101, 179);
+            padding-bottom: 4px;
+            border-bottom: 2px solid rgba(48, 138, 145, 0.264);
+        }
+
+        .b {
+            color: rgb(0, 33, 77);
+            padding-bottom: 4px;
+
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+        #telescope{
+            animation-name: tele;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-direction:  alternate-reverse;
+
+        }
+        @keyframes tele{
+            0%{
+                transform: rotateY(0deg);
+            }
+       
+            100%
+            {
+                transform: rotateY(-180deg);
+            }
+        }
+    </style>
+</body>
+<script type="text/javascript">
+
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js">
+
+
+</script>
+<script>
+    $(document).ready(function () {
+        $(".header-icons").hover(function () {
+            $(this).children(".black-box-title").fadeToggle(10)
+        });
+    });
+    //on click profile box appear in top right
+    $(document).ready(function () {
+        $(".profile-avtar").click(function () {
+            $(".profile-avtar-onclick").fadeToggle(100)
+        });
+    });
+    $(document).ready(function () {
+        $("#bell-icon").click(function () {
+            $("#notification-info").toggle();
+        });
+    });
+</script>
+
+</html>

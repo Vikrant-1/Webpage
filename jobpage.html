@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="jobpage.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://harvesthq.github.io/chosen/chosen.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+    <script type="text/javascript" src="https://api.iconify.design/mdi.js?icons=twitter" async="true"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angle list job page </title>
+</head>
+
+<body>
+     <!--search input-->
+     <div id="search-bar-id"><input type="search" placeholder="Search" id="search-bar-onclick"></div> 
+    <div id="blur-background">
+
+
+    </div>
+    <div id="REPORT-COMPANY1" class="report-company-options">
+        <p>Report </p>
+        <form action="">
+            <label class="report-option" for="rpt1">
+                <input type="radio" name="rpt" id="rpt1">Low quality or incomplete data
+            </label>
+            <label class="report-option" for="rpt2">
+                <input type="radio" name="rpt" id="rpt2">They are posting spam
+
+            </label>
+            <label class="report-option" for="rpt3">
+                <input type="radio" name="rpt" id="rpt3">They are duplicate
+            </label>
+            <label class="report-option" for="rpt4">
+                <input type="radio" name="rpt" id="rpt4">They are being abusive or harmful
+            </label>
+            <label class="report-option" for="rpt5">
+                <input type="radio" name="rpt" id="rpt5">Other
+            </label>
+        </form>
+        <textarea name="" id="report-text-add" cols="45" rows="12"></textarea>
+        <button class="cancel-report">Cancel</button>
+        <button class="saved-setting-btn2 report">Save</button>
+
+    </div>
+
+    <!--jobs filter options -->
+    <div class="filter-jobs-options">
+
+        <div>
+            <form>
+
+                <select id="multiple1" class="hrr" multiple style="width:400px; z-index: 30; display: none;">
+                    <optgroup label="ENGINEERING">
+                        <option class="opt" value="1">Engineering</option>
+                        <option class="opt" value="2">Software Engineer </option>
+                        <option class="opt" value="3">Mobile Developer</option>
+                        <option class="opt" value="4">iOS Developer</option>
+                        <option class="opt" value="5">Android Developer</option>
+                        <option class="opt" value="6">Frontend Developer</option>
+                        <option class="opt" value="7">Backend Developer</option>
+                        <option class="opt" value="8">Full-Stack Developer</option>
+                        <option class="opt" value="9">Embedded Engineer</option>
+                        <option class="opt" value="10">QA Engineer</option>
+                        <option class="opt" value="11">Data Engineer</option>
+                        <option class="opt" value="12">Security Engineer</option>
+                        <option class="opt" value="13">Machine Learning Engineer</option>
+                        <option class="opt" value="14">DepOps</option>
+                        <option class="opt" value="15">Data Scientist</option>
+                        <option class="opt" value="16">Software Architect</option>
+                        <option class="opt" value="17">Engineering Manager</option>
+                    </optgroup>
+                    <optgroup label="DESIGNER">
+                        <option class="opt" value="18">Designer</option>
+                        <option class="opt" value="19">Visual Designer</option>
+                        <option class="opt" value="20">Product Designer</option>
+                        <option class="opt" value="21">Graphic Designer</option>
+                        <option class="opt" value="22">Creative Director</option>
+                        <option class="opt" value="23">User Researcher</option>
+                        <option class="opt" value="24">Design Manager</option>
+
+                    </optgroup>
+                    <optgroup label="PRODUCT">
+                        <option class="opt" value="25">Product</option>
+                        <option class="opt" value="26">Product Manager</option>
+                    </optgroup>
+                    <optgroup label="OPERATIONS">
+                        <option class="opt" value="27">Operations</option>
+                        <option class="opt" value="28">Operations Manager</option>
+                        <option class="opt" value="29">H R</option>
+                        <option class="opt" value="30">Finance/Accounting</option>
+                        <option class="opt" value="31">Office Manager</option>
+                        <option class="opt" value="32">Recuriter</option>
+                        <option class="opt" value="33">Chief of Staff</option>
+                        <option class="opt" value="34">Customer Service</option>
+                    </optgroup>
+                    <optgroup label="SALES">
+                        <option class="opt" value="35">Sales</option>
+                        <option class="opt" value="36">Sales Development Representative</option>
+                        <option class="opt" value="37">Sales Manager</option>
+                        <option class="opt" value="38">BD Manager</option>
+                        <option class="opt" value="39">Account Manager</option>
+                        <option class="opt" value="40">Customer Success Manager</option>
+                        <option class="opt" value="41">Business Manager</option>
+                    </optgroup>
+                    <optgroup label="MARKETING">
+                        <option class="opt" value="42">Marketing</option>
+                        <option class="opt" value="43">Growth Manager</option>
+                        <option class="opt" value="44">Marketing Manager</option>
+                        <option class="opt" value="45">Digital Marketing Manager</option>
+                        <option class="opt" value="46">Content Creator</option>
+                        <option class="opt" value="47">Social Media Manager</option>
+                        <option class="opt" value="48">Copywriter</option>
+                        <option class="opt" value="49">Product Marketing Manager</option>
+                    </optgroup>
+                    <optgroup label="MANAGEMENT">
+                        <option class="opt" value="50">Management</option>
+                        <option class="opt" value="51">CEO</option>
+                        <option class="opt" value="52">CMO</option>
+                        <option class="opt" value="53">CFO</option>
+                        <option class="opt" value="54">COO</option>
+                        <option class="opt" value="55">CTO</option>
+                    </optgroup>
+                    <OPtgroup label="OTHER ENGINEERING">
+                        <option class="opt" value="56">Other Engineering</option>
+                        <option class="opt" value="57">Systems Engineer</option>
+                        <option class="opt" value="58">Mechaninal Engineer</option>
+                        <option class="opt" value="59">Hardware Engineer</option>
+                    </OPtgroup>
+                    <optgroup label="OTHERS">
+                        <option class="opt" value="60">Attorney</option>
+                        <option class="opt" value="61">Project Manager</option>
+                        <option class="opt" value="62">Data Analyst</option>
+                        <option class="opt" value="63">Business Analyst</option>
+
+                    </optgroup>
+                </select>
+                <select name="" id="location1" class="hrr-location" multiple style="width:400px ;  display: none;">
+                    <option value="1.1" class="opt">england</option>
+                </select>
+            </form>
+        </div>
+        <div class="remote-location">
+            <button class="remote-btn">REMOTE OFF</button>
+
+        </div>
+        <div class="remote-location-options">
+            <form action="">
+                <h3>Remote jobs</h3>
+                <label for="remote-option1">
+                    <input type="radio" name="remote-option" id="remote-option1" class="remote-option-cl"> No
+                    remote
+                    jobs
+                </label>
+                <p>Only show in-office jobs worldwide.</p>
+
+                <label for="remote-option2">
+                    <input type="radio" name="remote-option" id="remote-option2" class="remote-option-cl"> Include
+                    remote jobs
+                </label>
+                <p>Show in-office jobs worldwide, and remote jobs worldwide.</p>
+                <label for="remote-option3">
+                    <input type="radio" name="remote-option" id="remote-option3" class="remote-option-cl"> Only remote
+                    jobs
+                </label>
+                <p>Only show remote jobs worldwide.</p>
+                <div class="close-button">
+
+                </div>
+            </form>
+        </div>
+        <div class="selected-job-details">
+            <button id="no-filter-selected">No-filter-selected</button>
+            <button class="each-job-detail" id="salary-value" style="display: none;"></button>
+            <button class="each-job-detail" id="equity-value" style="display: none;"></button>
+            <button class="each-job-detail" id="skills-value" style="display: none;"></button>
+            <button class="each-job-detail" id="market-value" style="display: none;"></button>
+            <button class="each-job-detail" id="job-type-value" style="display: none;"></button>
+            <button class="each-job-detail" id="experience-value" style="display: none;"></button>
+            <button class="each-job-detail" id="include-value" style="display: none;"></button>
+            <button class="each-job-detail" id="exclude-value" style="display: none;"></button>
+            <button class="each-job-detail" id="remote-culture-value" style="display: none;">Distributed teams</button>
+            <button class="each-job-detail" id="immigration-value" style="display: none;">Sponsors visas</button>
+            <button class="each-job-detail" id="network-value" style="display: none;">In-Network</button>
+        </div>
+        <hr>
+        <!--box design class to describe box class
+         in flex-->
+        <p class="top-heading"><img width="15px" height="15px" src="photos/compensation.png"> Compensation</p>
+        <div class="box-design">
+            <form action="">
+                <div class="box">
+                    <p class="heading">Salary</p>
+                    <button class="clear" type="reset">Clear</button>
+                    <p id="hj" class="set-value"><input style="width: 10px;" type="text" class="value-input"
+                            id="currency-icon" value="$" disabled><input class="value-input" type="text" name=""
+                            id="min-salary" value="50k" disabled></p>
+                    <input type="range" min="0" max="200" value="50" step="1" id="salary-id" class="input-left"
+                        oninput="document.getElementById('min-salary').value = this.value + 'k' ">
+                    <select name="" id="currency" class="multiple-options">
+                        <option value="$">All Currencies</option>
+                        <option value="₹">Indian Rupees </option>
+                        <option value="$">American Dollars</option>
+                        <option value="$">Canadian Dollars</option>
+                        <option value="¥">Japanese Yan</option>
+                        <option value="€">Euro</option>
+                        <option value="£">British Pound</option>
+                        <option value="¥">Chinese Ranminbi Yuan</option>
+                        <option value="$">Singaporean Dollars</option>
+                    </select>
+                </div>
+            </form>
+            <form action="">
+                <div class="box">
+                    <p class="heading">Equity</p>
+                    <button class="clear" type="reset">Clear</button>
+                    <p class="set-value"><input class="value-input" type="text" id="min-equity" value="0.5%" disabled>
+                    </p>
+                    <input type="range" min="0.0" max="2" value="0.5" step="0.01" id="equity-id" class="input-left"
+                        oninput="document.getElementById('min-equity').value = this.value +'%'">
+                </div>
+            </form>
+        </div>
+
+        <p class="top-heading" style="padding-top: 40px;"><img width="15px" height="15px" src="photos/interest.png">
+            Area of Interest</p>
+        <div class="box-design">
+            <form>
+                <div class="box">
+                    <p class="heading">Skills</p>
+                    <button class="clear" type="reset">Clear</button>
+                    <select name="" id="skills" class="multiple-options">
+                        <option value="" selected disabled>Select Here</option>
+                        <option value="Python">Python</option>
+                        <option value="C++">C++</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="Java">Java</option>
+                        <option value="C">C</option>
+                        <option value="Html">Html</option>
+                        <option value="React">React</option>
+                        <option value="Ruby">Ruby</option>
+                    </select>
+                </div>
+            </form>
+            <form action="">
+                <div class="box">
+                    <p class="heading">Market</p>
+                    <button class="clear" type="reset">Clear</button>
+                    <select name="" id="market" class="multiple-options">
+                        <option value="" selected disabled>Select Here</option>
+                        <option value="">IT Sector</option>
+                        <option value="">E-Commerce</option>
+                        <option value="">Education</option>
+                        <option value="">Healthcare</option>
+                        <option value="">MarketPlaces</option>
+                        <option value="">Enterprise Software</option>
+                        <option value="">Journalism</option>
+                        <option value="">Tourism</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <p class="top-heading" style="padding-top: 40px;"><img width="15px" height="15px" src="">
+            Job Details</p>
+        <div class="box-design">
+            <form action="">
+                <div class="box">
+                    <p class="heading">Job Type</p>
+                    <button class="clear" type="reset">Clear</button>
+                    <label class="job-checkbox-label">Full Time
+                        <input class="dd" value="Full Time" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label id="hhh" class="job-checkbox-label">Contract
+                        <input class="dd" id="job-contract" value="Contract" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">Internship
+                        <input class="dd" value="Internship" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">Cofounder
+                        <input class="dd" value="Cofounder" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                </div>
+            </form>
+            <form>
+                <div class="box">
+                    <p class="heading">Required Experience</p>
+                    <button class="clear" type="reset">Clear</button>
+                    <p class="set-value"><input class="value-input" size="40" type="text" maxlength="40"
+                            id="min-experience" value="Filter jobs by years of experience" disabled></p>
+                    <input type="range" min="0.5" max="10" value="0" step="0.5" id="experience-id" class="input-left"
+                        oninput="document.getElementById('min-experience').value = this.value +'-Years' ">
+                    <label class="toggle" style="display: none; margin-top: 20px;">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <label for="toggle" class="label-for-toggle" style="display: none;">Include jobs with no experience
+                        listed</label>
+                </div>
+            </form>
+        </div>
+        <p class="top-heading" style="padding-top: 40px;"><img width="15px" height="15px" src="">
+            Keywords</p>
+        <div class="box-design">
+            <form action="">
+                <div class="box">
+                    <p class="heading">Included Keywords</p>
+                    <button class="clear" type="reset">Clear</button>
+                    <input type="text" class="multiple-options" id="include-keyword" placeholder="Enter a keyword">
+                    <button type="button" onclick="include_word()" id="include-btn" class="keyword">ADD</button>
+                    <ul id="include-list">
+
+                    </ul>
+                </div>
+
+            </form>
+            <form action="">
+                <div class="box">
+                    <p class="heading">Excluded Keywords</p>
+                    <button class="clear" type="reset">Clear</button>
+                    <input type="text" class="multiple-options" id="exclude-keyword" placeholder="Enter a keyword">
+                    <button type="button" onclick="exclude_word()" id="exclude-btn" class="keyword">ADD</button>
+                    <ul id="exclude-list">
+
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <p class="top-heading" style="padding-top: 40px;"><img width="15px" height="15px" src="">
+            Company Details</p>
+        <div class="box-design">
+            <form>
+                <div class="box">
+                    <p class="heading" style="padding-bottom: 10px;">Company size</p>
+                    <button class="clear" type="reset">Clear</button>
+                    <label class="job-checkbox-label"> 1-10 employees
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">11-50 employees
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">51-200 employees
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">201-500 employees
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">501-1000 employees
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">1001-5000 employees
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">5000+ employees
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                </div>
+            </form>
+            <form>
+                <div class="box">
+                    <p class="heading">Investment stage</p>
+
+                    <button class="clear" type="reset">Clear</button>
+                    <label class="job-checkbox-label">Seed Stage
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">Series A
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">Series B
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">Growth
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label">IPO
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+                    </label>
+                    <label class="job-checkbox-label" style="padding-bottom: 25px;">Acquired
+                        <input class="dd" type="checkbox">
+                        <span class="tick"></span>
+
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="box-design" style="margin-top: 50px;">
+            <form action="">
+                <div class="box">
+                    <p class="heading">Remote culture</p>
+                    <label id="remote-id" class="toggle" style=" margin-top: 20px;">
+                        <input oninput="checked_item(event, 'remote-culture-value')" class="dd" type="checkbox">
+                        <!-- ch for checked and unch for unchecked -->
+                        <span class="slider"></span>
+                    </label>
+                    <label for="toggle" class="label-for-toggle">Only show jobs at companies that are mostly or fully
+                        remote</label>
+                </div>
+            </form>
+        </div>
+        <p class="top-heading" style="padding-top: 40px;"><img width="15px" height="15px" src="">
+            Immigration + Network</p>
+        <div class="box-design">
+            <form action="">
+                <div class="box">
+                    <p class="heading">Immigration</p>
+                    <label id="immigration-id" class="toggle" style=" margin-top: 20px;">
+                        <input oninput="checked_item(event, 'immigration-value')" class="dd" type="checkbox">
+                        <!-- ch for checked and unch for unchecked -->
+                        <span class="slider"></span>
+                    </label>
+                    <label for="toggle" class="label-for-toggle">Only show companies that can sponsor a visa</label>
+                </div>
+            </form>
+            <form action="">
+                <div class="box">
+                    <p class="heading">Network</p>
+                    <label id="network-id" class="toggle" style=" margin-top: 20px;">
+                        <input oninput="checked_item(event, 'network-value')" class="dd" type="checkbox">
+                        <!-- ch for checked and unch for unchecked -->
+                        <span class="slider"></span>
+                    </label>
+                    <label for="toggle" class="label-for-toggle">In network results only</label>
+                </div>
+            </form>
+        </div>
+        <div class="job-result">
+            <input type="button" value="3649" class="result-numbers"
+                style="background-color: transparent; border: none;">
+            <button type="button" id="view-result-btn" class="saved-setting-btn2">View results</button>
+        </div>
+    </div>
+    <!--anglelist job page -->
+    <div id="anglelist-job-page">
+        <!--angle list nav- bar header contain logo,
+             search bar ,bell icon and profile -->
+        <div class="nav-menu">
+            <!---logo of angle list at top left-->
+            <div class="logo-anglelist">
+                <img width="130px" src="photos/angle-list logo.png" alt="Angle-list">
+            </div>
+            <!--options to select what we open in job page -->
+            <div class="anglelist-options">
+                <a href="http://127.0.0.1:5500/jobpage.html">
+                    <div class="icon-job" style="color: brown;">
+                        <span style="font-size: 25px; " id="bag-icon" class="material-icons">
+                            business_center
+                        </span>
+                        <p style="margin-left: -3px;">Jobs</p>
+                    </div>
+                </a>
+                <a href="http://127.0.0.1:5500/applied.html">
+                    <div class="icon-job">
+                        <span style="font-size: 25px;" id="apply-icon" class="material-icons">
+                            approval
+                        </span>
+                        <p style="margin-left: -13px;">Applied</p>
+
+                    </div>
+                </a>
+                <a href="http://127.0.0.1:5500/message.html">
+                    <div class="icon-job">
+                        <span style="font-size: 25px; margin-left: 2px;" style="margin-left: 1px;font-size: 25px;"
+                            id="messageicon" class="iconify" data-icon="bx:bx-message-rounded"
+                            data-inline="false"></span>
+                        <p style="margin-left: -15px;">Messages</p>
+                    </div>
+                </a>
+                <a href="http://127.0.0.1:5500/discover.html">
+                    <div class="icon-job">
+                        <span style="font-size: 25px; margin-left: 5px;" id="assessmenticon" class="iconify"
+                            data-icon="ps:paper-tablet" data-inline="false"></span>
+                        <p style="margin-left: -23px;">Assessments</p>
+
+                    </div>
+                </a>
+            </div>
+            <!-- notification bell icon--->
+
+            <div class="icons">
+                <div class="header-icons">
+                    <span id="bell-icon" class="material-icons">
+                        notifications
+                    </span>
+                    <div class="black-box-title">
+                        <p>Notifications</p>
+
+                    </div>
+                </div>
+                <!--search bar icon-->
+
+                <div class="header-icons">
+                    <span id="search-icon" class="material-icons">
+                        search
+                    </span>
+                    <div class="black-box-title">
+                        <p>Search everything</p>
+                    </div>
+                </div>
+            </div>
+            <!---profile  and its setting-->
+            <div class="profile-avtar">
+                <img class="profile-avtar-img" src="photos/profile-photo.jpg" alt="">
+                <p style="font-weight:500 ; font-size: 17; margin-left: 10px;">Vikrant <br><span
+                        style="font-size: 13px;">Open to offer</span></p>
+
+            </div>
+        </div>
+        <div class="profile-avtar-onclick">
+            <div class="profile-avtar-onclick-text1">
+                <p style="font-weight:500 ; font-size: 17;" class="profile-text1">Vikrant <br><span
+                        style="font-size: 13px;" class="profile-text1">Open to offer</span></p>
+
+                <div>
+                    <img class="profile-avtar-img" src="photos/profile-photo.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="profile-avtar-onclick-text2">
+                <p style="cursor: text;">Personal</p>
+            </div>
+            <div class="profile-avtar-onclick-text3">
+                <p class="profile-text1">Edit profile</p>
+                <p class="profile-text1">Assessments</p>
+                <p class="profile-text1">Settings</p>
+            </div>
+            <div class="profile-avtar-onclick-text2">
+                <p class="profile-text1">Help</p>
+                <p class="profile-text1">Log out</p>
+            </div>
+            <button class="profile-avtar-btn" type="button">POST A JOB</button>
+
+
+        </div>
+        <div id="notification-info">
+            <p>You have no notification yet.</p>
+        </div>
+        <!--three html links added for main page , saved jobs , hidden jobs -->
+        <div class="search-for-jobs">
+            <p>Search for jobs</p>
+            <div class="n">
+                <a class="b" href="http://127.0.0.1:5500/jobpage.html">Browse all</a>
+                <a class="a" href="http://127.0.0.1:5500/saved.html">Saved</a>
+                <a class="a" href="http://127.0.0.1:5500/hidden.html">Hidden</a>
+            </div>
+        </div>
+        <style>
+            .a {
+                color: grey;
+            }
+
+            .a:hover {
+                color: rgb(42, 101, 179);
+                padding-bottom: 4px;
+
+                border-bottom: 2px solid rgba(48, 138, 145, 0.264);
+            }
+
+            .b {
+                color: rgb(0, 33, 77);
+                padding-bottom: 4px;
+
+                border-bottom: 2px solid rgb(0, 0, 0);
+            }
+        </style>
+        <!--full job info which , where , how much salary time , skill-->
+        <div class="full-info-about-job" style="border-top: none;">
+            <!--save the search history-->
+
+            <div class="saved-search">
+                <div class="new-search" id="new-search-id">
+                    <div class="ns" onclick="open1(event, 'NewSearch1')" style="border: 1px solid;">
+
+                        <button style="border: none;" value="New Search" class="ns-btn" type="button">New
+                            Search1</button>
+                        <span><img style="cursor: pointer; position: static;" class="pen" width="15px"
+                                src="photos/edit-search.png" alt=""></span>
+
+                    </div>
+
+                    <div class="add-btn">
+                        <button type="button">
+                            <span><img width="35px" height="33px" src="photos/add-button.png" alt="add-search"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="new-search" style="display: none;">
+                    <ol>
+                        <li>
+                            <div id="appen" class="ns" onclick="open1(event, 'NewSearch2')" style="border: 1px solid;">
+                                <button style="border: none;" value="New Search" class="ns-btn" type="button">New
+                                    Search2</button>
+                                <span> <img style="cursor: pointer; position: static;" class="pen" width="15px"
+                                        src="photos/edit-search.png" alt=""></span>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ns" onclick="open1(event, 'NewSearch3')" style="border: 1px solid;">
+
+                                <button style="border: none;" value="New Search" class="ns-btn" type="button">New
+                                    Search3</button>
+                                <span> <img style="cursor: pointer; position: static;" class="pen" width="15px"
+                                        src="photos/edit-search.png" alt=""></span>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ns" onclick="open1(event, 'NewSearch4')" style="border: 1px solid;">
+
+                                <button style="border: none;" value="New Search" class="ns-btn" type="button">New
+                                    Search4</button>
+                                <span> <img style="cursor: pointer; position: static;" class="pen" width="15px"
+                                        src="photos/edit-search.png" alt=""></span>
+
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <div id="NewSearch1" class="saved-search-setting">
+                        <p class="saved-setting-text1">Saved search setting 1</p>
+                        <span id="count1" class="count-text"></span>
+                        <input id="vik" class="search-setting-input" required type="text" minlength="1" maxlength="15"
+                            placeholder="Name" value="New Search 1" name="Saved search">
+                        <br>
+                        <label class="toggle">
+                            <input type="checkbox" id="cToggle">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="toggle">Get job alerts for this search</label>
+
+                        <p class="saved-setting-text2">Recevice email notifications when new matching jobs are posted
+                        </p>
+                        <div class="saved-setting-btn">
+                            <button class="saved-setting-btn1" type="button" onclick="close()">Delete</button>
+                            <button class="saved-setting-btn2" type="submit">Save</button>
+                        </div>
+                    </div>
+                    <div id="NewSearch2" class="saved-search-setting">
+                        <p class="saved-setting-text1">Saved search setting 2</p>
+                        <span id="count2" class="count-text"></span>
+                        <input class="search-setting-input" type="text" minlength="1" maxlength="15" placeholder="Name"
+                            value="New Search 2" name="Saved search">
+                        <br>
+                        <label class="toggle">
+                            <input type="checkbox" id="cToggle">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="toggle">Get job alerts for this search</label>
+
+                        <p class="saved-setting-text2">Recevice email notifications when new matching jobs are posted
+                        </p>
+                        <div class="saved-setting-btn">
+                            <button class="saved-setting-btn1" type="button" onclick="close()">Delete</button>
+                            <button class="saved-setting-btn2" type="submit">Save</button>
+                        </div>
+                    </div>
+                    <div id="NewSearch3" class="saved-search-setting">
+                        <p class="saved-setting-text1">Saved search setting 3</p>
+                        <span class="count-text"></span>
+                        <input class="search-setting-input" type="text" minlength="1" maxlength="15" placeholder="Name"
+                            value="New Search 3" name="Saved search">
+                        <br>
+                        <label class="toggle">
+                            <input type="checkbox" id="cToggle">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="toggle">Get job alerts for this search</label>
+
+                        <p class="saved-setting-text2">Recevice email notifications when new matching jobs are posted
+                        </p>
+                        <div class="saved-setting-btn">
+                            <button class="saved-setting-btn1" type="button" onclick="close()">Delete</button>
+                            <button class="saved-setting-btn2" type="submit">Save</button>
+                        </div>
+                    </div>
+                    <div id="NewSearch4" class="saved-search-setting">
+                        <p class="saved-setting-text1">Saved search setting 4</p>
+                        <span class="count-text"></span>
+                        <input class="search-setting-input" type="text" minlength="1" maxlength="15" placeholder="Name"
+                            value="New Search 4" name="Saved search">
+                        <br>
+                        <label class="toggle">
+                            <input type="checkbox" id="cToggle">
+                            <span class="slider"></span>
+                        </label>
+                        <label for="toggle">Get job alerts for this search</label>
+
+                        <p class="saved-setting-text2">Recevice email notifications when new matching jobs are posted
+                        </p>
+                        <div class="saved-setting-btn">
+                            <button class="saved-setting-btn1" type="button" onclick="close()">Delete</button>
+                            <button class="saved-setting-btn2" type="submit">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---types of jobs offered we can selected the multiple options and also remove them-->
+            <div class="extra">
+                <form>
+                    <select id="multi" class="hrr" multiple style="width:400px; display: none;">
+                        <optgroup label="ENGINEERING">
+                            <option class="opt" value="1">Engineering</option>
+                            <option class="opt" value="2">Software Engineer </option>
+                            <option class="opt" value="3">Mobile Developer</option>
+                            <option class="opt" value="4">iOS Developer</option>
+                            <option class="opt" value="5">Android Developer</option>
+                            <option class="opt" value="6">Frontend Developer</option>
+                            <option class="opt" value="7">Backend Developer</option>
+                            <option class="opt" value="8">Full-Stack Developer</option>
+                            <option class="opt" value="9">Embedded Engineer</option>
+                            <option class="opt" value="10">QA Engineer</option>
+                            <option class="opt" value="11">Data Engineer</option>
+                            <option class="opt" value="12">Security Engineer</option>
+                            <option class="opt" value="13">Machine Learning Engineer</option>
+                            <option class="opt" value="14">DepOps</option>
+                            <option class="opt" value="15">Data Scientist</option>
+                            <option class="opt" value="16">Software Architect</option>
+                            <option class="opt" value="17">Engineering Manager</option>
+                        </optgroup>
+                        <optgroup label="DESIGNER">
+                            <option class="opt" value="18">Designer</option>
+                            <option class="opt" value="19">Visual Designer</option>
+                            <option class="opt" value="20">Product Designer</option>
+                            <option class="opt" value="21">Graphic Designer</option>
+                            <option class="opt" value="22">Creative Director</option>
+                            <option class="opt" value="23">User Researcher</option>
+                            <option class="opt" value="24">Design Manager</option>
+
+                        </optgroup>
+                        <optgroup label="PRODUCT">
+                            <option class="opt" value="25">Product</option>
+                            <option class="opt" value="26">Product Manager</option>
+                        </optgroup>
+                        <optgroup label="OPERATIONS">
+                            <option class="opt" value="27">Operations</option>
+                            <option class="opt" value="28">Operations Manager</option>
+                            <option class="opt" value="29">H R</option>
+                            <option class="opt" value="30">Finance/Accounting</option>
+                            <option class="opt" value="31">Office Manager</option>
+                            <option class="opt" value="32">Recuriter</option>
+                            <option class="opt" value="33">Chief of Staff</option>
+                            <option class="opt" value="34">Customer Service</option>
+                        </optgroup>
+                        <optgroup label="SALES">
+                            <option class="opt" value="35">Sales</option>
+                            <option class="opt" value="36">Sales Development Representative</option>
+                            <option class="opt" value="37">Sales Manager</option>
+                            <option class="opt" value="38">BD Manager</option>
+                            <option class="opt" value="39">Account Manager</option>
+                            <option class="opt" value="40">Customer Success Manager</option>
+                            <option class="opt" value="41">Business Manager</option>
+                        </optgroup>
+                        <optgroup label="MARKETING">
+                            <option class="opt" value="42">Marketing</option>
+                            <option class="opt" value="43">Growth Manager</option>
+                            <option class="opt" value="44">Marketing Manager</option>
+                            <option class="opt" value="45">Digital Marketing Manager</option>
+                            <option class="opt" value="46">Content Creator</option>
+                            <option class="opt" value="47">Social Media Manager</option>
+                            <option class="opt" value="48">Copywriter</option>
+                            <option class="opt" value="49">Product Marketing Manager</option>
+                        </optgroup>
+                        <optgroup label="MANAGEMENT">
+                            <option class="opt" value="50">Management</option>
+                            <option class="opt" value="51">CEO</option>
+                            <option class="opt" value="52">CMO</option>
+                            <option class="opt" value="53">CFO</option>
+                            <option class="opt" value="54">COO</option>
+                            <option class="opt" value="55">CTO</option>
+                        </optgroup>
+                        <OPtgroup label="OTHER ENGINEERING">
+                            <option class="opt" value="56">Other Engineering</option>
+                            <option class="opt" value="57">Systems Engineer</option>
+                            <option class="opt" value="58">Mechaninal Engineer</option>
+                            <option class="opt" value="59">Hardware Engineer</option>
+                        </OPtgroup>
+                        <optgroup label="OTHERS">
+                            <option class="opt" value="60">Attorney</option>
+                            <option class="opt" value="61">Project Manager</option>
+                            <option class="opt" value="62">Data Analyst</option>
+                            <option class="opt" value="63">Business Analyst</option>
+
+                        </optgroup>
+                    </select>
+                    <select name="" id="location" class="hrr-location" multiple style="width:400px ; display: none;">
+                        <option value="1.1" class="opt">england</option>
+                    </select>
+                    <div class="empty" style="width: 73%; height: 15px;">
+
+                    </div>
+                    <button class="filter-jobs" type="button">Filters</button>
+
+                </form>
+            </div>
+        </div>
+        <div style="margin-left: 200px;padding: 10px; font-size: 30px;">
+            <p>Search Result</p>
+        </div>
+        <!---diff job companies -->
+        <div class="full-info-about-job">
+            <div class="company">
+                <div class="company-main">
+                    <div class="company-logo">
+
+                    </div>
+                    <div class="company-name">
+                        <p style="font-size: 18px;font-weight: 600;">AmberStudent<span
+                                style="font-size: 10px;margin-left: 5px; padding: 3px;border-radius: 3px; font-weight: normal; width: fit-content; background-color: rgb(202, 195, 195);">PROMOTED</span>
+                        </p>
+                        <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                        <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img
+                                    width="18px" style="position: absolute; margin-left: -20px;"
+                                    src="photos/group-size.png" alt=""></span>51-200 EMPLOYEES</p>
+                    </div>
+                    <div>
+                        <span id="company-details-arrow" class="material-icons" style="margin-left: 300px;">
+                            navigate_next
+                        </span>
+                    </div>
+                </div>
+                <div class="about-company-details">
+                    <p class="about-company"><span class="tick1"></span>ACTIVELY HIRING</p>
+                    <p class="about-company"><span style="position: absolute; font-size: 14px; margin-left: -15px;"
+                            class="material-icons">attach_money</span>RECENTLY FUNDED</p>
+                    <p class="about-company" style="background-color: rgb(255, 238, 214); color: chocolate;"><span
+                            style="font-size: 14px; position: absolute; margin-left: -16px;"
+                            class="material-icons">thumb_up_alt</span> 4.5 HIGHLY RATED</p>
+                    <p class="about-company" style="background-color: whitesmoke; color: rgb(33, 29, 240);"><span
+                            style="position: absolute; font-size: 14px; margin-left: -16px;"
+                            class="material-icons">trending_up</span>GROWING FAST</p>
+                </div>
+                <div class="company-job">
+                    <span class="company-job-type">Software Engineer</span>
+                    <p><span class="company-job-date">9 months ago</span>
+                        <span><button class="company-job-apply">Apply</button></span>
+                    </p>
+                </div>
+                <div class="company-save-hide">
+                    <button class="save-company"><span style="font-size: 17px; color: #00aced;"
+                            class="material-icons">star_border</span>Save</button>
+                    <button class="report-company"><span class="material-icons">report_problem</span>Report</button>
+                    <button class="hide-comapany"><span class="material-icons">hide_source</span>Hide</button>
+                </div>
+            </div>
+        </div>
+        <div class="full-info-about-job">
+            <div class="company">
+                <div class="company-main">
+                    <div class="company-logo" style="background-color: brown;">
+
+                    </div>
+                    <div class="company-name">
+                        <p style="font-size: 18px;font-weight: 600;">TOOLBOX<span
+                                style="font-size: 10px;margin-left: 5px; padding: 3px;border-radius: 3px; font-weight: normal; width: fit-content; background-color: rgb(202, 195, 195);">PROMOTED</span>
+                        </p>
+                        <p style="font-size: 15px;">Social commerce for the informal sector</p>
+                        <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img
+                                    width="18px" style="position: absolute; margin-left: -20px;"
+                                    src="photos/group-size.png" alt=""></span>21-100 EMPLOYEES</p>
+                    </div>
+                    <div>
+                        <span id="company-details-arrow" class="material-icons" style="margin-left: 420px;">
+                            navigate_next
+                        </span>
+                    </div>
+                </div>
+                <div class="about-company-details">
+                    <p class="about-company"><span class="tick1"></span>ACTIVELY HIRING</p>
+                    <p class="about-company" style="background-color: whitesmoke; color: rgb(33, 29, 240);"><span
+                            style="position: absolute; font-size: 14px; margin-left: -16px;"
+                            class="material-icons">trending_up</span>GROWING FAST</p>
+                    <p class="about-company"><span style="position: absolute; font-size: 14px; margin-left: -15px;"
+                            class="material-icons">attach_money</span>RECENTLY FUNDED</p>
+                    <p class="about-company" style="background-color: rgb(255, 238, 214); color: chocolate;"><span
+                            style="font-size: 14px; position: absolute; margin-left: -16px;"
+                            class="material-icons">thumb_up_alt</span> 4.5 HIGHLY RATED</p>
+                    <p class="about-company" style="background-color: whitesmoke; color: rgb(33, 29, 240);"><span
+                            style="position: absolute; font-size: 14px; margin-left: -16px;"
+                            class="material-icons">speed</span>4.6 STRONG LEADERSHIP</p>
+                </div>
+                <div class="company-job">
+                    <span class="company-job-type">Frontend (Javascript) Development Intern
+                    </span>
+                    <p><span class="company-job-date">9 months ago</span>
+                        <span><button class="company-job-apply">Apply</button></span>
+                    </p>
+                </div>
+                <div class="company-job">
+                    <span class="company-job-type">Software Engineer</span>
+                    <p><span class="company-job-date">9 months ago</span>
+                        <span><button class="company-job-apply">Apply</button></span>
+                    </p>
+                </div>
+                <div class="company-save-hide">
+                    <button class="save-company"><span style="font-size: 17px; color: #00aced;"
+                            class="material-icons">star_border</span>Save</button>
+                    <button class="report-company"><span class="material-icons">report_problem</span>Report</button>
+                    <button class="hide-comapany"><span class="material-icons">hide_source</span>Hide</button>
+                </div>
+            </div>
+        </div>
+        <div class="full-info-about-job">
+            <div class="company">
+                <div class="company-main">
+                    <div class="company-logo">
+
+                    </div>
+                    <div class="company-name">
+                        <p style="font-size: 18px;font-weight: 600;">AmberStudent<span
+                                style="font-size: 10px;margin-left: 5px; padding: 3px;border-radius: 3px; font-weight: normal; width: fit-content; background-color: rgb(202, 195, 195);">PROMOTED</span>
+                        </p>
+                        <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                        <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img
+                                    width="18px" style="position: absolute; margin-left: -20px;"
+                                    src="photos/group-size.png" alt=""></span>51-200 EMPLOYEES</p>
+                    </div>
+                    <div>
+                        <span id="company-details-arrow" class="material-icons" style="margin-left: 300px;">
+                            navigate_next
+                        </span>
+                    </div>
+                </div>
+                <div class="about-company-details">
+                    <p class="about-company"><span class="tick1"></span>ACTIVELY HIRING</p>
+                    <p class="about-company"><span style="position: absolute; font-size: 14px; margin-left: -15px;"
+                            class="material-icons">attach_money</span>RECENTLY FUNDED</p>
+                    <p class="about-company" style="background-color: rgb(255, 238, 214); color: chocolate;"><span
+                            style="font-size: 14px; position: absolute; margin-left: -16px;"
+                            class="material-icons">thumb_up_alt</span> 4.5 HIGHLY RATED</p>
+                    <p class="about-company" style="background-color: whitesmoke; color: rgb(33, 29, 240);"><span
+                            style="position: absolute; font-size: 14px; margin-left: -16px;"
+                            class="material-icons">trending_up</span>GROWING FAST</p>
+                </div>
+                <div class="company-job">
+                    <span class="company-job-type">Software Engineer</span>
+                    <p><span class="company-job-date">9 months ago</span>
+                        <span><button class="company-job-apply">Apply</button></span>
+                    </p>
+                </div>
+                <div class="company-save-hide">
+                    <button class="save-company"><span style="font-size: 17px; color: #00aced;"
+                            class="material-icons">star_border</span>Save</button>
+                    <button class="report-company"><span class="material-icons">report_problem</span>Report</button>
+                    <button class="hide-comapany"><span class="material-icons">hide_source</span>Hide</button>
+                </div>
+            </div>
+        </div>
+        <div class="full-info-about-job">
+            <div class="company">
+                <div class="company-main">
+                    <div class="company-logo">
+
+                    </div>
+                    <div class="company-name">
+                        <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent<span
+                                style="font-size: 10px;margin-left: 5px; padding: 3px;border-radius: 3px; font-weight: normal; width: fit-content; background-color: rgb(202, 195, 195);">PROMOTED</span>
+                        </p>
+                        <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                        <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img
+                                    width="18px" style="position: absolute; margin-left: -20px;"
+                                    src="photos/group-size.png" alt=""></span>51-200 EMPLOYEES</p>
+                    </div>
+                    <div>
+                        <span id="company-details-arrow" class="material-icons" style="margin-left: 300px;">
+                            navigate_next
+                        </span>
+                    </div>
+                </div>
+                <div class="about-company-details">
+                    <p class="about-company"><span class="tick1"></span>ACTIVELY HIRING</p>
+                    <p class="about-company"><span style="position: absolute; font-size: 14px; margin-left: -15px;"
+                            class="material-icons">attach_money</span>RECENTLY FUNDED</p>
+                    <p class="about-company" style="background-color: rgb(255, 238, 214); color: chocolate;"><span
+                            style="font-size: 14px; position: absolute; margin-left: -16px;"
+                            class="material-icons">thumb_up_alt</span> 4.5 HIGHLY RATED</p>
+                    <p class="about-company" style="background-color: whitesmoke; color: rgb(33, 29, 240);"><span
+                            style="position: absolute; font-size: 14px; margin-left: -16px;"
+                            class="material-icons">trending_up</span>GROWING FAST</p>
+                </div>
+                <div class="company-job">
+                    <span class="company-job-type">Software Engineer</span>
+                    <p><span class="company-job-date">3 days ago</span>
+                        <span><button class="company-job-apply">Apply</button></span>
+                    </p>
+                </div>
+                <div class="company-save-hide">
+                    <button class="save-company"><span style="font-size: 17px; color: #00aced;"
+                            class="material-icons">star_border</span>Save</button>
+                    <button class="report-company"><span class="material-icons">report_problem</span>Report</button>
+                    <button class="hide-comapany"><span class="material-icons">hide_source</span>Hide</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='company-main-row'>
+        <div class="company-main row">
+            <div class="company-logo row">
+
+            </div>
+            <div class="company-name">
+                <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent
+                </p>
+                <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+               
+            </div>
+        </div>
+        <div class="company-main row">
+            <div class="company-logo row">
+            </div>
+            <div class="company-name">
+                <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent</p>
+                <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img width="18px"
+                             src="photos/group-size.png"
+                            alt=""></span>51-200 EMPLOYEES</p>
+            </div>
+        </div>
+        <div class="company-main row">
+            <div class="company-logo row">
+
+            </div>
+            <div class="company-name">
+                <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent</p>
+                <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img width="18px"
+                            src="photos/group-size.png"
+                            alt=""></span>51-200 EMPLOYEES</p>
+            </div>
+        </div>
+        <div class="company-main row">
+            <div class="company-logo row">
+
+            </div>
+            <div class="company-name">
+                <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent</p>
+                <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img width="18px"
+                             src="photos/group-size.png"
+                            alt=""></span>51-200 EMPLOYEES</p>
+            </div>
+        </div>
+        <div class="company-main row">
+            <div class="company-logo row">
+
+            </div>
+            <div class="company-name">
+                <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent</p>
+                <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img width="18px"
+                             src="photos/group-size.png"
+                            alt=""></span>51-200 EMPLOYEES</p>
+            </div>
+        </div>
+        <div class="company-main row">
+            <div class="company-logo row">
+
+            </div>
+            <div class="company-name">
+                <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent</p>
+                <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img width="18px"
+                             src="photos/group-size.png"
+                            alt=""></span>51-200 EMPLOYEES</p>
+            </div>
+        </div>
+        <div class="company-main row">
+            <div class="company-logo row">
+
+            </div>
+            <div class="company-name">
+                <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent</p>
+                <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img width="18px"
+                             src="photos/group-size.png"
+                            alt=""></span>51-200 EMPLOYEES</p>
+            </div>
+        </div>
+        <div class="company-main row">
+            <div class="company-logo row">
+            </div>
+            <div class="company-name">
+                <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent </p>
+                <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img width="18px"
+                            src="photos/group-size.png"
+                            alt=""></span>51-200 EMPLOYEES</p>
+            </div>
+        </div>
+        <div class="company-main row">
+            <div class="company-logo row">
+
+            </div>
+            <div class="company-name">
+                <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent</p>
+                <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img width="18px"
+                            src="photos/group-size.png"
+                            alt=""></span>51-200 EMPLOYEES</p>
+            </div>
+        </div>
+        <div class="company-main row">
+            <div class="company-logo row">
+
+            </div>
+            <div class="company-name">
+                <p class="company-name-" style="font-size: 18px;font-weight: 600;">AmberStudent</p>
+                <p style="font-size: 15px;">Long-term accommodation booking platform for students</p>
+                <p style="font-size: 12px; margin: 10px 20px ; color: rgb(110, 107, 107);"><span><img width="18px"
+                             src="photos/group-size.png"
+                            alt=""></span>51-200 EMPLOYEES</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-end">
+       
+        <div class="social-media-icon">
+        <p style=" padding-bottom:10px;" class="page-end-headings">Follow us</p>
+            <span class="iconify" data-icon="ant-design:twitter-outlined"></span>
+            <span class="iconify" data-icon="bx:bxl-facebook"></span>
+            
+            <span id="github_icon" class="iconify" data-icon="uim:github-alt"></span>
+
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js">
+
+
+</script>
+<script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
+<script>
+    //on hover title show and hide using fade toggle
+    // of notification and search icon
+    $(document).ready(function () {
+        $("#currency , #salary-id").change(function () {
+            var currency = $("#currency option:selected").val();
+            var salary = $("#min-salary").val();
+            $("#currency-icon").val(currency);
+            $("#salary-value").text(currency + salary);
+            $("#salary-value").show();
+            $("#salary-id").siblings(".clear").click(function () {
+                $("#salary-value").hide()
+            });
+        });
+        $(" #equity-id").change(function () {
+            var equity = $("#min-equity").val();
+            $("#equity-value").text(equity);
+            $("#equity-value").show();
+            $("#equity-id").siblings(".clear").click(function () {
+                $("#equity-value").hide()
+            });
+        });
+
+    });
+
+    $(document).ready(function () {
+        $("#skills").change(function () {
+            var skill = $("#skills option:selected").val();
+            $("#skills-value").text(skill);
+            $("#skills-value").show()
+            $("#skills").siblings(".clear").click(function () {
+                $("#skills-value").hide()
+            })
+        });
+    });
+    $(document).ready(function () {
+        $("#market").change(function () {
+            var market = $("#market option:selected").text();
+            $("#market-value").text(market);
+            $("#market-value").show();
+            $("#market").siblings(".clear").click(function () {
+                $("#market-value").hide()
+            })
+        });
+    });
+    $(document).ready(function () {
+        $("#experience-id").change(function () {
+            var experience = $("#experience-id").val();
+            $("#experience-value").text(experience + '-Years');
+            $("#experience-value").show();
+            $("#experience-id").siblings(".clear").click(function () {
+                $("#experience-value").hide()
+            });
+        });
+    });
+    $(document).ready(function () {
+        $("#include-btn").click(function () {
+            var include = $("#include-list li").text();
+            $("#include-value").text(include);
+            $("#include-value").show();
+            $("#include-btn").siblings(".clear").click(function () {
+                $("#include-value").hide();
+            });
+        });
+    });
+    $(document).ready(function () {
+        $("#exclude-btn").click(function () {
+            var include = $("#exclude-list li").text();
+            $("#exclude-value").text(include);
+            $("#exclude-value").show();
+            $("#exclude-btn").siblings(".clear").click(function () {
+                $("#exclude-value").hide();
+            });
+        });
+    });
+    function checked_item(event, check) {
+        var check_box = $(".dd").is(":checked");
+        if (check_box) {
+            document.getElementById(check).style.display = "block";
+        } else {
+            document.getElementById(check).style.display = "none";
+        }
+    };
+    function input_show(event, inpt_show) {
+        var task = $(".input-left").change();
+        if (task) {
+            document.getElementById(inpt_show).style.display = "block";
+        } else {
+            document.getElementById(inpt_show).style.display = "none";
+
+        }
+    }
+
+    $(document).ready(function () {
+        $(".job-checkbox-label, .toggle").on("click", function () {
+            var checkbox_outline = $(".dd").is(":checked");
+            if (checkbox_outline) {
+                $(this).parent(".box").css({
+                    outline: "2px white solid"
+                });
+                $(this).siblings(".clear").show(0);
+                $("#no-filter-selected").hide(0);
+
+            } else {
+                $(this).parent(".box").css({
+                    outline: "none"
+                });
+                $(this).siblings(".clear").hide(0);
+                $("#no-filter-selected").show(0)
+
+            };
+        });
+        $(".multiple-options, .input-left").on("change", function () {
+            var multiple_options = $(".multiple-options option:selected , .input-left");
+            if (multiple_options) {
+                $(this).parent(".box").css({
+                    outline: "2px white solid"
+                });
+                $(this).siblings(".clear").show(0);
+                $("#no-filter-selected").hide(0);
+            } else {
+                $(this).parent(".box").css({
+                    outline: "none"
+                })
+                $(this).siblings(".clear").hide(0);
+
+            };
+        });
+    });
+
+    $(document).ready(function () {
+        $(".remote-btn").click(function () {
+            $(".remote-location-options").toggle()
+        });
+    });
+
+    //header icons bell and search on hover title appear
+    $(document).ready(function () {
+        $(".header-icons").hover(function () {
+            $(this).children(".black-box-title").fadeToggle(10)
+        });
+    });
+    $(document).ready(function () {
+        $("#bell-icon").click(function () {
+            $("#notification-info").toggle();
+        });
+    });
+    //on click profile box appear in top right
+    $(document).ready(function () {
+        $(".profile-avtar").click(function () {
+            $(".profile-avtar-onclick").fadeToggle(100)
+        });
+    });
+    //types of jobs offered we can selected the multiple options and also remove them
+    //chosen plugin cdn added
+
+    $(document).ready(function () {
+        $(".hrr").show()
+    });
+    $(document).ready(function () {
+        $(".hrr-location").show()
+    });
+
+    $(document).ready(function () {
+        $(".hrr").chosen({
+            placeholder_text_multiple: "Add a job title",
+            no_results_text: "Oops, nothing found!",
+            max_selected_options: "4",
+        });
+    });
+    $(document).ready(function () {
+        $(".hrr-location").chosen({
+            placeholder_text_multiple: "Add a job location",
+
+        });
+    });
+    $(document).ready(function () {
+        $("#remote-option3").click(function () {
+            $("#location1").chosen({
+                placeholder_text_multiple: "location",
+
+            });
+        });
+    });
+    $(document).ready(function () {
+        $("#remote-option2, #remote-option3").on("click", function () {
+            var ttt = $("#remote-option2, #remote-option3").is(":checked");
+            var hhh = $("#remote-option3").is(":checked");
+            if (ttt) {
+                $(".remote-btn").css({
+                    "background-color": "black",
+                    "color": "white",
+                    "border": "2px solid rgba(132, 247, 247, 0.651)"
+                }).text("WORLDWIDE");
+            };
+        });
+        $("#remote-option1").on("click", function () {
+            var yyy = $("#remote-option1").is(":checked");
+            if (yyy) {
+                $(".remote-btn").css({
+                    "background-color": "grey",
+                    "border": "1px solid black",
+                    "color": "white",
+                }).text("REMOTE OFF");
+            };
+        });
+    });
+    //count numbers of input field of saved search setting
+    $(document).ready(function () {
+        var max_length = 15;
+        $(".search-setting-input").keyup(function () {
+            var len = max_length - $(this).val().length;
+            $(this).siblings(".count-text").text(len);
+        });
+    });
+    $(document).ready(function open1(evt, sea) {
+        $(".saved-setting-btn2").click(function () {
+            var t = $(".search-setting-input").val();
+            $(".ns-btn").text(t);
+        });
+    });
+
+    $(document).ready(function () {
+        $(".saved-setting-btn1, .saved-setting-btn2").click(function () {
+            $(".saved-search-setting").hide()
+        });
+    });
+
+    $(document).ready(function () {
+        $(".box-filter-design").mouseover(function () {
+            $(this).children(".clear-salary").show(0, function () {
+                $(".box-filter-design").mouseleave(function () {
+                    $(this).children(".clear-salary").hide(0)
+                });
+            });
+        });
+    });
+
+    $(document).ready(function () {
+        $(".clear").click(function () {
+            $(this).parent(".box").css({
+                outline: "none"
+            });
+            $(this).siblings("#include-list, #exclude-list").children("li").remove();
+            $(this).hide();
+        });
+
+    });
+    $(document).ready(function () {
+        $(".input-left").change(function () {
+            $(this).siblings(".toggle, .label-for-toggle").show(0, function () {
+                $(".clear").click(function () {
+                    $(this).siblings(".toggle, .label-for-toggle").hide(0)
+                });
+            });
+        });
+    });
+    $(document).ready(function () {
+        $(".filter-jobs").click(function () {
+            $("#blur-background, .filter-jobs-options").show(0, function () {
+                $("#blur-background, #view-result-btn").click(function () {
+                    $("#blur-background, .filter-jobs-options").hide(0)
+                });
+            });
+        });
+    });
+    //toogle border color change on checked input
+
+    function open1(evt, sea) {
+        var i, ns, search_saved;
+        search_saved = document.getElementsByClassName("saved-search-setting");
+        for (i = 0; i < search_saved.length; i++) {
+            search_saved[i].style.display = "none";
+        }
+        ns = document.getElementsByClassName("ns");
+        for (let i = 0; i < ns.length; i++) {
+            ns[i].className = ns[i].className.replace("active");
+        }
+        document.getElementById(sea).style.display = "block";
+        evt.currentTarget.className += "active";
+    }
+    $(document).ready(function () {
+        $(".add-btn").one("click", function () {
+            var d = $("#appen")
+            $("#new-search-id").prepend(d)
+        });
+    });
+
+    function include_word() {
+        var include = document.getElementById("include-keyword");
+        var ul = document.getElementById("include-list");
+        var li = document.createElement("li");
+        li.setAttribute('id', include.value);
+        li.appendChild(document.createTextNode(include.value));
+        ul.appendChild(li);
+    };
+    function exclude_word() {
+        var exclude = document.getElementById("exclude-keyword");
+        var ul = document.getElementById("exclude-list");
+        var li = document.createElement("li");
+        li.setAttribute('id', exclude.value);
+        li.appendChild(document.createTextNode(exclude.value));
+        ul.appendChild(li);
+    };
+    $(document).ready(function () {
+        $(".report-company").click(function () {
+            $(".report-company-options, #blur-background").show(0, function () {
+                $("#blur-background,.saved-setting-btn2.report, .cancel-report").click(function () {
+                    $(".report-company-options, #blur-background").hide()
+                });
+            });
+        });
+    });
+    $(document).ready(function () {
+        $(".filter-jobs, .report-company , #search-icon").click(function () {
+            $("body").css({
+                overflowY: 'hidden'
+            });
+        });
+    });
+    $(document).ready(function () {
+        $("#blur-background, .saved-setting-btn2.report, .cancel-report, #view-result-btn").click(function () {
+            $("body").css({
+                overflowY: 'scroll'
+            });
+        });
+    });
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1250) {
+                $(".nav-menu").fadeOut(200);
+            } else {
+                $(".nav-menu").fadeIn(200);
+            }
+        });
+    });
+    $(document).ready(function(){
+        $("#search-icon").click(function () {
+            $("#search-bar-id , #blur-background").show(0, function () {
+                $("#blur-background").click(function () {
+                    $("#search-bar-id , #blur-background").hide(0)
+                });
+            });
+        });
+    });
+
+
+</script>
+
+</html>

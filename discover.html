@@ -1,0 +1,432 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="jobpage.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://harvesthq.github.io/chosen/chosen.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angle list job page </title>
+
+
+</head>
+
+<body>
+    <!--anglelist job page -->
+    <div id="anglelist-job-page">
+        <!--angle list nav- bar header contain logo,
+             search bar ,bell icon and profile -->
+        <div class="nav-menu">
+            <!---logo of angle list at top left-->
+            <div class="logo-anglelist">
+                <img width="130px" src="photos/angle-list logo.png" alt="Angle-list">
+            </div>
+            <!--options to select what we open in job page -->
+            <div class="anglelist-options">
+                <a href="http://127.0.0.1:5500/jobpage.html">
+                    <div class="icon-job">
+                        <span style="font-size: 25px;" id="bag-icon" class="material-icons">
+                            business_center
+                        </span>
+                        <p style="margin-left: -3px;">Jobs</p>
+                    </div>
+                </a>
+                <a href="http://127.0.0.1:5500/applied.html">
+                    <div class="icon-job">
+                        <span style="font-size: 25px;" id="apply-icon" class="material-icons">
+                            approval
+                        </span>
+                        <p style="margin-left: -13px;">Applied</p>
+                    </div>
+                </a>
+                <a href="http://127.0.0.1:5500/message.html">
+                    <div class="icon-job">
+                        <span style="font-size: 25px; margin-left: 2px;" style="margin-left: 1px;font-size: 25px;"
+                            id="messageicon" class="iconify" data-icon="bx:bx-message-rounded"
+                            data-inline="false"></span>
+                        <p style="margin-left: -15px;">Messages</p>
+                    </div>
+                </a>
+                <a href="http://127.0.0.1:5500/discover.html">
+                    <div class="icon-job" style="color: brown;">
+                        <span style="font-size: 25px; margin-left: 5px; color: brown;" id="assessmenticon"
+                            class="iconify" data-icon="ps:paper-tablet" data-inline="false"></span>
+                        <p style="margin-left: -23px;">Assessments</p>
+                    </div>
+                </a>
+            </div>
+            <!-- notification bell icon--->
+
+            <div class="icons">
+                <div class="header-icons">
+                    <span id="bell-icon" class="material-icons">
+                        notifications
+                    </span>
+                    <div class="black-box-title">
+                        <p>Notifications</p>
+                    </div>
+                </div>
+                <!--search bar icon-->
+
+                <div class="header-icons">
+                    <span id="search-icon" class="material-icons">
+                        search
+                    </span>
+                    <div class="black-box-title">
+                        <p>Search everything</p>
+                    </div>
+                </div>
+            </div>
+            <!---profile  and its setting-->
+            <div class="profile-avtar">
+                <img class="profile-avtar-img" src="photos/profile-photo.jpg" alt="">
+                <p style="font-weight:500 ; font-size: 17; margin-left: 10px;">Vikrant <br><span
+                        style="font-size: 13px;">Open to offer</span></p>
+
+            </div>
+        </div>
+        <div class="profile-avtar-onclick">
+            <div class="profile-avtar-onclick-text1">
+                <p style="font-weight:500 ; font-size: 17;" class="profile-text1">Vikrant <br><span
+                        style="font-size: 13px;" class="profile-text1">Open to offer</span></p>
+
+                <div>
+                    <img class="profile-avtar-img" src="photos/profile-photo.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="profile-avtar-onclick-text2">
+                <p style="cursor: text;">Personal</p>
+            </div>
+            <div class="profile-avtar-onclick-text3">
+                <p class="profile-text1">Edit profile</p>
+                <p class="profile-text1">Assessments</p>
+                <p class="profile-text1">Settings</p>
+            </div>
+            <div class="profile-avtar-onclick-text2">
+                <p class="profile-text1">Help</p>
+                <p class="profile-text1">Log out</p>
+            </div>
+            <button class="profile-avtar-btn" type="button">POST A JOB</button>
+
+
+        </div>
+
+    </div>
+    <div id="notification-info">
+        <p>You have no notification yet.</p>
+    </div>
+    <div class="search-for-jobs">
+        <p>Assessments<sup style="font-size: medium;">BETA</sup></p>
+        <p style="font-size: 15px; padding: 10px 0;">Stand out from other job seekers by completing an assessment!
+            AngelList will feature top performers to employers.</p>
+
+        <div class="n">
+            <a class="b" href="http://127.0.0.1:5500/discover.html">Discover</a>
+            <a class="a" href="http://127.0.0.1:5500/assessment.html">
+                My Assessments</a>
+        </div>
+        <div style="margin-top: -20px; width: 70%; border-top: 1px solid rgb(185, 185, 185);"></div>
+
+    </div>
+    <!--discover page design making quiz opions-->
+    <div style="margin-top: 20px;" class="discover-quiz">
+        <div class="discover" style="background-color: mediumturquoise;">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Back-End Web</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>25 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+        <div class="discover" style="background-color: palegoldenrod;">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Back-End Web</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>25 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+        <div class="discover" style="background-color: rgb(99, 212, 247);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Back-End Web</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>25 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+    </div>
+    <div class="discover-quiz">
+        <div class="discover" style="background-color: rgb(240, 186, 107);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Back-End Web</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>25 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+        <div class="discover" style="background-color: rgb(175, 243, 148);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Back-End Web</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>25 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+        <div class="discover" style="background-color: rgb(248, 160, 160);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Back-End Web</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>25 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+    </div>
+    <div class="discover-quiz">
+        <div class="discover" style="background-color: rgb(161, 214, 195);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Back-End Web</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>25 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+        <div class="discover" style="background-color: rgb(170, 197, 238);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Front-End Web</p>
+                <p>HTML5, Javascript, CSS,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>10 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+        <div class="discover" style="background-color: rgb(238, 170, 221);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Full-stack Web</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>8 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+    </div>
+    <div class="discover-quiz">
+        <div class="discover" style="background-color: rgb(188, 170, 238);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Android</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>22 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+        <div class="discover" style="background-color: rgb(211, 180, 195);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Front-End Web</p>
+                <p>Javascript, HTML, css,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>20 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+        <div class="discover" style="background-color: rgb(192, 192, 192);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Back-End Web</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>5 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+    </div>
+    <div class="discover-quiz">
+        <div class="discover" style="background-color: rgb(200, 238, 170);">
+            <img class="discover-logo" width="20px" height="30px" src="photos/angle logo.png" alt="">
+            <div class="discover-mcq">
+                <p>Multiple Choice Quiz</p>
+                <p>Back-End Web</p>
+                <p>Algorithms, data structures, databases,<br> HTTP, web framework </p>
+
+            </div>
+            <div class="mcq-added-time">
+                <p>5 minutes</p>
+                <p class="learn-quiz">Learn more</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<style>
+    .a {
+        color: grey;
+    }
+
+    .a:hover {
+        color: rgb(42, 101, 179);
+        padding-bottom: 4px;
+
+        border-bottom: 2px solid rgba(48, 138, 145, 0.264);
+    }
+
+    .b {
+        color: rgb(0, 33, 77);
+        padding-bottom: 4px;
+
+        border-bottom: 2px solid #0f0f0f;
+    }
+
+    .discover-quiz {
+        margin-left: 150px;
+        display: flex;
+    }
+
+    .discover {
+
+        min-width: 320px;
+        min-height: 150px;
+        background-color: white;
+        border: 1px lightgrey solid;
+        border-radius: 4px;
+        box-shadow: 0 0 5px 0px rgba(48, 138, 145, 0.264);
+        padding: 10px;
+        cursor: pointer;
+        margin-left: 30px;
+        margin-top: 70px;
+
+    }
+
+    .discover:hover {
+        box-shadow: 0 0 50px 2px rgba(255, 255, 255, 0.264);
+        transform: rotatez(0deg);
+        transform-style: preserve-3d;
+
+    }
+
+    .discover-mcq :first-child {
+        color: darkgreen;
+        font-size: 13px;
+    }
+
+    .discover-mcq p:nth-child(2) {
+        font-weight: 500;
+        font-size: 19px;
+    }
+
+    .discover-mcq p:nth-child(3) {
+        color: grey;
+        font-size: 14px;
+    }
+
+    .mcq-added-time {
+        font-size: 13px;
+        margin-top: 50px;
+        color: rgb(54, 73, 69);
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .discover-logo {
+        position: absolute;
+        margin-left: 300px;
+    }
+
+    .mcq-added-time p:nth-child(2) {
+        color: rgb(0, 65, 205);
+        display: none;
+    }
+</style>
+<script type="text/javascript">
+
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js">
+
+
+</script>
+<script>
+    //header icons bell and search on hover title appear
+    $(document).ready(function () {
+        $(".header-icons").hover(function () {
+            $(this).children(".black-box-title").fadeToggle(10)
+        });
+    });
+    //on click profile box appear in top right
+    $(document).ready(function () {
+        $(".profile-avtar").click(function () {
+            $(".profile-avtar-onclick").fadeToggle(100)
+        });
+    });
+    $(document).ready(function () {
+        $("#bell-icon").click(function () {
+            $("#notification-info").toggle();
+        });
+    });
+    //toogle learn-quiz class
+    $(document).ready(function () {
+        $(".discover").hover(function () {
+            $(this).children(".mcq-added-time").children(".learn-quiz").toggle();
+        });
+    });
+</script>
+
+</html>
